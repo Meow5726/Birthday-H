@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onclick="startMusic()">
+
+<canvas id="fireworks"></canvas>
+<canvas id="bgDots"></canvas>
+
+<div id="hearts"></div>
+<div id="balloons"></div>
+<div id="sparkles"></div>
+
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<div id="stage">
+
+  <!-- STEP 1 -->
+  <div id="step1" class="show">
+    <h1 class="glow big">🎆 It’s 12:00 AM 🎆</h1>
+    <h2 class="script">Wish you a Very Happy Birthday ❤️</h2>
+    <p class="tap">Tap anywhere to begin 🎶</p>
+  </div>
+  <div id="step2" class="hidden">
+    <div class="cake3d">🎂</div>
+    <div class="video-area">
+      <video id="cakeVideo" autoplay muted playsinline controls>
+        <source src="cake cutting.mp4" type="video/mp4">
+      </video>
+    </div>
+    <p id="cakeText">Cutting the Cake 🎂</p>
+  </div>
+  <div id="step3" class="hidden">
+    <img id="slideImg">
+    <p id="slideText"></p>
+  </div>
+  <div id="step4" class="hidden">
+    <div class="gift" onclick="openGift()"><h5>OPEN YOUR GIFT</h5><br> 🎁
+    <div id="letterBox" class="hidden">
+      <p class="handwriting" id="typedText"></p>
+      <div class="chocolate">🍫</div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
